@@ -10,11 +10,34 @@ namespace RPS
     public static void Main()
     {
       Console.WriteLine("Welcome to Rock, Paper, Scissors!");
-      Console.WriteLine("Player 1: [rock/paper/scissors] [q to quit]");
-      string choice1 = Console.ReadLine().ToLower();
-      Console.WriteLine("Player 2: [rock/paper/scissors] [q to quit]");
-      string choice2 = Console.ReadLine().ToLower();
+      Console.WriteLine("Play against a computer or two player mode? [computer/2p/] [q to quit]");
+      string mode = Console.ReadLine().ToLower();
+      string choice1 = "";
+      string choice2 = "";
       string[] validPlays = new string[] { "rock", "paper", "scissors" };
+      
+      if (mode == "q")
+      {
+        choice1 = "q";
+      } else if (mode == "computer")
+      {
+      Console.WriteLine("Player 1: [rock/paper/scissors] [q to quit]");
+      choice1 = Console.ReadLine().ToLower();
+      choice2 = Game.CPUPlayer();
+      Console.WriteLine("--------");
+      Console.WriteLine("The computer has chosen: " + choice2);
+      } else if (mode == "2p")
+      {
+      Console.WriteLine("Player 1: [rock/paper/scissors] [q to quit]");
+      choice1 = Console.ReadLine().ToLower();
+      Console.WriteLine("Player 2: [rock/paper/scissors] [q to quit]");
+      choice2 = Console.ReadLine().ToLower();
+      } else
+      {
+        Console.WriteLine("Please enter computer, 2p or q");
+        Main();
+      }
+      
       
       if (choice1 == "q" || choice2 == "q")
       {
@@ -39,6 +62,7 @@ namespace RPS
         Console.WriteLine("--------");
         Main();
       }
+    
     }
   }
 }
