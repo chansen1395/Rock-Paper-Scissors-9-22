@@ -28,7 +28,12 @@ namespace RPS.Tests
         Assert.AreEqual("Player 2", Game.CheckWinner("scissors", "rock"));
         Assert.AreEqual("Player 2", Game.CheckWinner("rock", "paper"));
       }
-
+      
+      [TestMethod]
+      public void CPUPlayer_ReturnsNumber_String()
+      {
+        Assert.IsTrue(Game.CPUPlayer() == "rock" || Game.CPUPlayer() == "scissors" || Game.CPUPlayer() == "paper");
+      }
       
 
     }
