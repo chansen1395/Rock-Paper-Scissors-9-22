@@ -52,9 +52,9 @@ namespace RPS
           Main();
         } else
         {
-        Console.WriteLine("The winner is " + result);
-        Console.WriteLine("--------");
-        Main();
+          Console.WriteLine("The winner is " + result);
+          Console.WriteLine("--------");
+          Main();
         }
       } else 
       {

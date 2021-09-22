@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-#### This console application will ask the user for two different choices and paly a game of rock paper scissors.
+#### This console application will play a game of rock, paper, scissors in two player or computer mode.
 
 #### By Connor Hansen and Anna Clarke
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-_This application will ask the user for two inputs from two different players and play a game of rock, paper, scissors. It will display the winner or draw in the console._
+_This application will ask the user if they would like to play against a computer or with another player. If they choose computer mode, the computer will choose randomly and play rock, paper scissors with the user. If the user chooses two player mode, the application will ask each player for a choice and play a game of rock, paper, scissors. It will display the winner or draw in the console._
 
 ## Setup/Installation Requirements
 
@@ -22,8 +22,9 @@ _This application will ask the user for two inputs from two different players an
   - _In bash at a folder of your choice, type the following:_
     - $ git clone https://github.com/chansen1395/Rock-Paper-Scissors-9-22
     - $ code .
-    - $ dotnet restore
+    - $ cd RPS
     - $ dotnet run
+  - _Follow console prompts to select computer or 2-player options._
 
 
 ## Known Bugs
@@ -37,5 +38,5 @@ _This application will ask the user for two inputs from two different players an
 ## Contact Information
 
 - Anna Clarke: _{<anclarkie@gmail.com>}_
-- _{<chansen13@georgefox.edu>}_
+- Connor Hansen: _{<chansen13@georgefox.edu>}_
 - _{[GitHub Repo - main](https://github.com/chansen1395/Rock-Paper-Scissors-9-22)}_
