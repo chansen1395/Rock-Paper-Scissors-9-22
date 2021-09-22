@@ -12,9 +12,15 @@ namespace RPS.Models
         {
           return "Draw";
         }
-        else
+        else if ((choice1 == "rock" && choice2 == "scissors") 
+          || (choice1 == "scissors" && choice2 == "paper")
+          || (choice1 == "paper" && choice2 == "rock"))
         {
-          return "Not yet";
+          return "Player 1";
+        }
+        else 
+        {
+          return "Player 2";
         }
       }
     }
